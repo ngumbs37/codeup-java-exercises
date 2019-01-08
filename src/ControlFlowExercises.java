@@ -8,16 +8,16 @@ public class ControlFlowExercises {
                 }
             i++;
         }
-        
-        i = 0;
+        System.out.println();
+        i = 100;
         do{
-            if (i!=100) {
+            if (i!=-10) {
                 System.out.println(i);
             } else {
                 System.out.print(i);
             }
-            i+=2;
-        }while(i <=100);
+            i-=5;
+        }while(i >=-10);
 
     }//end main
 }//end class
