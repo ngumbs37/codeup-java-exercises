@@ -20,5 +20,22 @@ public class ControlFlowExercises {
             System.out.print("\n"+i);
         }
 
+        System.out.print("\nFizzBuzz");
+
+        for(i=1; i <= 100; i++){
+            System.out.println();
+            if(i % 3 == 0){
+                System.out.print("Fizz");
+            }
+            if(i % 5 == 0){
+                System.out.print("Buzz");
+            } else{
+                if (i % 3 != 0 && i % 5 != 0){
+                    System.out.print(i);
+                }
+            }
+
+        }
+
     }//end main
 }//end class
