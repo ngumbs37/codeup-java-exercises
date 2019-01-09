@@ -8,7 +8,6 @@ public class AdventureGame {
         String username = scan.next();
         System.out.println("Are you ready to begin, "+ username+"?");
         String choice = scan.next();
-
         System.out.println("What enemy do you wish to hunt?");
         String enemyName = scan.next();
         boolean escape = false;
@@ -48,7 +47,7 @@ public class AdventureGame {
                     escape = true;
                     break;
                 }
-                System.out.println("%s attacks you for %d damage", );
+                System.out.println("%s attacks you for %d damage");
                 userHP = userHP - enemyAtk;
 
 
