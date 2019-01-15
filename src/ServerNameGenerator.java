@@ -65,8 +65,10 @@ public class ServerNameGenerator {
                           "work",
                           "world",
                           "year"};
-
-        System.out.println(getRandom(adjectives, nouns));
+            for (int i = 0;i <15; i++){
+                System.out.println("Here is your server name:");
+                System.out.println(getRandom(adjectives, nouns));
+            }
 
     }
 
@@ -75,6 +77,6 @@ public class ServerNameGenerator {
     }
 
     static int ranNum(int num){
-        return (int) Math.ceil(Math.random()* num);
+        return (int) Math.floor(Math.random()* num);
     }
 }
