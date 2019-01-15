@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Person {
     private String name;
     // returns the person's name
@@ -15,6 +18,14 @@ public class Person {
     }
     public Person(String name){
         setName(name);
+    }
+
+    static Person[] addPerson(Person[] people, Person person){
+        int arrayLength = people.length;
+        people = Arrays.copyOf(people, arrayLength+1);
+        people[arrayLength] = person;
+
+        return people;
     }
 
     public static void main(String[] args) {
